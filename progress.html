@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="progress.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <!-- menu on side -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="home.html">Home</a>
+      <a href="todo.html">QuickList</a>
+        <a class="active" href="#progress">Progress</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="resource.html">Resources</a>
+
+      </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span onclick="myFunction()"></span>
+
+  <!-- menu button -->
+  <div class="container" onclick="myFunction(this)" id="myHeader">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- header -->
+  <div class="header" id="myHeader">
+    <a class="logo"><img src=momentum.png></a>
+  </div>
+
+  <div class="header" id="myHeader">
+    <h1>My Progress</h1>
+  </div>
+
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">Slider</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Bar</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+    <!--SLIDER-->
+    <h2 id="name1"></h2>
+    <div class="slidecontainer">
+      <input type="range" min="0" max="15" value="0" class="slider" id="myRange">
+      <h4> Problems Done: <span id="demo"> </h4> </span>
+    </div>
+
+    <h2 id="name4"></h2>
+    <div class="slidecontainer">
+      <input type="range" min="0" max="18" value="0" class="slider1" id="myRange1">
+      <h4> Problems Done: <span id="demo1"> </h4> </span>
+    </div>
+  </div>
+
+  <div id="Paris" class="tabcontent">
+    <!--PROGRESS BAR-->
+    <h2 id="name3"></h2>
+    <div class="container1">
+      <input type="radio" class="radio" name="progress" value="five" id="five">
+      <label for="five" class="label">5%</label>
+
+      <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive" checked>
+      <label for="twentyfive" class="label">25%</label>
+
+      <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
+      <label for="fifty" class="label">50%</label>
+
+      <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive">
+      <label for="seventyfive" class="label">75%</label>
+
+      <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
+      <label for="onehundred" class="label">100%</label>
+
+      <div class="progress">
+        <div class="progress-bar"></div>
+
+
+        <!-- <h2 id="name5"></h2>
+        <div class="container2">
+          <input type="radio" class="radio1" name="progress" value="five" id="five1">
+          <label for="five1" class="label1">5%</label>
+
+          <input type="radio" class="radio1" name="progress" value="twentyfive" id="twentyfive1" checked>
+          <label for="twentyfive1" class="label1">25%</label>
+
+          <input type="radio" class="radio1" name="progress" value="fifty" id="fifty1">
+          <label for="fifty1" class="label1">50%</label>
+
+          <input type="radio" class="radio1" name="progress" value="seventyfive" id="seventyfive1">
+          <label for="seventyfive1" class="label1">75%</label>
+
+          <input type="radio" class="radio1" name="progress" value="onehundred" id="onehundred1">
+          <label for="onehundred1" class="label1">100%</label>
+
+          <div class="progress1"> </div>
+            <div class="progress-bar1"></div>
+          </div> -->
+  </div>
+
+
+
+  </div>
+
+<!--SCRIPT-->
+<script src="progress.js"></script>
+</body>
+</html>

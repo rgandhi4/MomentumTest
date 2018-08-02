@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="resource.css">
+</head>
+<body>
+  <!-- menu on side -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="home.html">Home</a>
+      <a href="todo.html">QuickList</a>
+      <a href="progress.html">Progress</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="assignments.html">Assignments</a>
+      <a class="active" href="#resources">Resources</a>
+
+      </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span onclick="myFunction()"></span>
+
+  <!-- menu button -->
+  <div class="container" onclick="myFunction(this)" id="myHeader">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- header -->
+  <div class="header" id="myHeader">
+    <a class="logo"><img src=momentum.png></a>
+  </div>
+
+  <div class="header" id="myHeader">
+    <h1>Resources</h1>
+  </div>
+
+
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> All Resources</button>
+    <button class="btn" onclick="filterSelection('School Help')"> School Help</button>
+    <button class="btn" onclick="filterSelection('Presentations')"> Presentations</button>
+    <button class="btn" onclick="filterSelection('Etc')"> Assignments</button>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column School Help">
+      <div class="content">
+        <a href="https://www.khanacademy.org/"> <img src="khanacademy.PNG" alt="Khan Academy" style="width:50"> </a>
+        <h4>Khan Academy</h4>
+        <p>Khan academy is the perfect resource to touch up on certain subjects and/or as a resource for topics you may not understand in class</p>
+      </div>
+    </div>
+    <div class="column Presentations">
+      <div class="content">
+        <div class="Prezi">
+        <a href="https://www.prezi.com/"><img src="prezi.png" alt="Prezi" style="width:50%"> </a>
+        </div>
+        <h4>Prezi</h4>
+        <p>Prezi is a perfect way to spice up presentations.</p>
+
+
+      </div>
+    </div>
+    <div class="column Etc">
+      <div class="content">
+        <a href="https://www.edmodo.com/"> <img src="edmodo.png" alt="Edmodo" style="width:50%"> </a>
+        <h4>Edmodo</h4>
+        <p>A resource teachers use to assign homework and send notifications</p>
+
+      </div>
+    </div>
+
+    <div class="column Etc">
+      <div class="content">
+          <a href="https://www.classroom.google.com/"> <img src="googleclassroom.png" alt="Google Classroom" style="width:50%"> </a>
+        <h4>Google Classroom</h4>
+        <p>Google Classroom is linked to Google and allows the user to turn in assignments directly from their Google Drive</p>
+
+      </div>
+    </div>
+    <div class="column School Help">
+      <div class="content">
+          <a href="https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q"> <img src="cras.png" alt="Crash Course" style="width:50%"> </a>
+        <h4>Crash Course</h4>
+        <p>Crash Course is an amazing resource for numerous subjects such as History and science</p>
+
+      </div>
+    </div>
+    <div class="column School Help">
+      <div class="content">
+        <a href="https://www.ted.com/talks"><img src="ted.png" alt="Ted Talk" style="width:50%"></a>
+        <h4>Ted Talk</h4>
+        <p>Offers very interesting lectures about numerous topics</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  <script src="resource.js"></script>
+</body>
+</html>

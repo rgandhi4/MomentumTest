@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src="https://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+<link href="https://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+  <!-- menu on side -->
+    <div id="mySidenav" class="sidenav">
+      <a href="home.html">Home</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="todo.html">QuickList</a>
+      <a href="progress.html">Progress</a>
+      <a class="active" href="#calendar">Calendar</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="resource.html">Resources</a>
+
+      </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span onclick="myFunction()"></span>
+
+  <!-- menu button -->
+  <div class="container1" onclick="myFunction(this)" id="myHeader">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- header -->
+  <div class="header" id="myHeader">
+    <a class="logo"><img src=momentum.png></a>
+  </div>
+
+  <div class="header" id="myHeader">
+    <h1>My Calendar</h1>
+  </div>
+
+
+<div id="myScheduler"></div>
+<script src="calendar.js"></script>
+</body>
+</html>

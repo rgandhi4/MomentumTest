@@ -1,0 +1,358 @@
+h1
+{font-family: 'Open Sans', sans-serif;
+text-align: center;
+color: white;
+}
+h2
+{font-family: 'Open Sans', sans-serif;
+text-align: center;
+color: #383838;
+font-size: 36px;
+}
+h3
+{font-family: 'Open Sans', sans-serif;
+text-align: center;
+color: #383838;
+font-size: 32px;
+font-weight: bold;
+}
+h4
+{font-family: 'Open Sans', sans-serif;
+/* text-align: center; */
+color: #383838;
+font-size: 28px;
+/* margin-left: 250px; */
+text-align: justify;
+margin-left: 20%;
+}
+h5
+{font-family: 'Open Sans', sans-serif;
+text-align: center;
+color: #383838;
+}
+h6
+{font-family: 'Open Sans', sans-serif;
+text-align: center;
+color: #383838;
+}
+body
+{font-family: 'Open Sans', sans-serif;
+/* text-align: center; */
+color: #383838;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #eeeeee;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #737373;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Style the header */
+.header1 {
+  padding: 10px 16px;
+  background: #f1f1f1;
+  color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+.logo {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0)
+.sticky + .content {
+  padding-top: 102px;
+}
+*/
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+
+
+
+
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+* { box-sizing: border-box; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; margin: 0; padding: 0; tap-highlight-color:rgba(0,0,0,0); }
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+  font-family: Courier, monospace;
+  font-style: normal;
+  font-weight: 100;
+  color: #202020;
+  font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@keyframes logo {
+  0%   { transform: rotate(25deg) scale(.01); opacity: 0; }
+  70%  { transform: scale(1.4); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.slogan {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 0em;
+  height: 1.25em;
+  margin: auto;
+  font-size: 2em;
+  line-height: 1.5em;
+  border-right: .125em solid #39F;
+  box-sizing: content-box;
+  animation-name: blink-start, typing, blink-end;
+  animation-duration: 1s, 1s, 1s, 1s, 1s, 1s, 1s;
+  animation-timing-function: linear, steps(13, end), linear;
+  animation-delay: 0s, 1s, 2s;
+  animation-iteration-count: 1, 1, infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  text-align: center;
+  justify-content: center;
+  float:center;
+
+}
+
+.slogan span {
+  display: block;
+  width: 18em;
+  text-align: center;
+  float: center;
+  justify-content: center;
+  margin: auto;
+}
+
+@keyframes typing {
+  from { width: 0em; }
+  to   { width: 18em; }
+}
+
+@keyframes blink-start {
+  from, to { border-color: black; }
+  50% { border-color: transparent; }
+}
+
+@keyframes blink-end {
+  from, to { border-color: #f1f1f1; }
+  50% { border-color: transparent; }
+}
+.contact {
+  position: relative;
+  width: 20em;
+  margin: -1em auto 1.5em auto;
+}
+
+.contact a {
+  display: inline-block;
+  overflow: hidden;
+  opacity: 0;
+  width: 2em;
+  line-height: 2em;
+  margin: 0 .20em;
+  color: white;
+  font-size: 1.5em;
+  transition: background-color .2s ease-in-out;
+  border-radius: 50%;
+  animation: icons .2s ease-out 0s 1 normal forwards;
+}
+
+@keyframes icons {
+  0%    { transform: translateY(3em); opacity: 0; }
+  70%   { transform: translateY(-.5em); opacity: 1; }
+  100%  { transform: translateY(0em); opacity: 1; }
+}
+
+.contact a:nth-child(1) { animation-delay: 2.5s; }
+.contact a:nth-child(2) { animation-delay: 2.55s; }
+.contact a:nth-child(3) { animation-delay: 2.6s; }
+.contact a:nth-child(4) { animation-delay: 2.65s; }
+
+.contact a:hover { color: #39F; }

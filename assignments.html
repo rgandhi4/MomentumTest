@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="assignments.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+      box-sizing: border-box;
+  }
+  /* Create three equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+      .column {
+          width: 100%;
+      }
+  }
+  </style>
+</head>
+
+<body>
+
+  <!-- menu on side -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="home.html">Home</a>
+      <a href="todo.html">QuickList</a>
+      <a href="progress.html">Progress</a>
+      <a href="calendar.html">Calendar</a>
+      <a class="active" href="#assignments">Assignments</a>
+      <a href="resource.html">Resources</a>
+
+      </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span onclick="myFunction()"></span>
+
+  <!-- menu button -->
+  <div class="container" onclick="myFunction(this)" id="myHeader">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- header -->
+  <div class="header" id="myHeader">
+    <a class="logo"><img src=momentum.png></a>
+  </div>
+
+  <div class="header" id="myHeader">
+    <h1>My Assignments</h1>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:aliceblue;">
+      <div> <h2> 1. <span id="name0"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date0"> </span></h3></div>
+      <div> <h3> Course: <span id="course0"> </span></h3></div>
+    </div>
+    <div class="column" style="background-color:azure;">
+      <div> <h2> 2. <span id="name1"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date1"> </span></h3></div>
+      <div> <h3> Course: <span id="course1"> </span></h3></div>
+    </div>
+    <div class="column" style="background-color:mintcream;">
+      <div> <h2> 3. <span id="name2"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date2"> </span></h3></div>
+      <div> <h3> Course: <span id="course2"> </span></h3></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:ghostwhite;">
+      <div> <h2> 4. <span id="name3"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date3"> </span></h3></div>
+      <div> <h3> Course: <span id="course3"> </span></h3></div>
+    </div>
+    <div class="column" style="background-color:lavender;">
+      <div> <h2> 5. <span id="name4"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date4"> </span></h3></div>
+      <div> <h3> Course: <span id="course4"> </span></h3></div>
+    </div>
+    <div class="column" style="background-color:#E8DAEF;">
+      <div> <h2> 6. <span id="name5"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date5"> </span></h3></div>
+      <div> <h3> Course: <span id="course5"> </span></h3></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:aliceblue;">
+      <div> <h2> 7. <span id="name6"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date6"> </span></h3></div>
+      <div> <h3> Course: <span id="course6"> </span></h3></div>
+      <div> <h4> Select your course: <span>
+        <select id='mySelect1'>
+          <option value='nothing'>--Select course--</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+            <option value="Math">Mathematics</option>
+            <option value="Foreign Language">Foreign Language</option>
+            <option value="Art">Art</option>
+            <option value="Other">Other</option>
+        </select>
+        </span>
+        </h3>
+        </div>
+    </div>
+    <div class="column" style="background-color:azure;">
+      <div> <h2> 8. <span id="name7"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date7"> </span></h3></div>
+      <div> <h3> Course: <span id="course7"> </span></h3></div>
+      <div> <h4> Select your course: <span>
+        <select id='mySelect2'>
+            <option value='nothing'>--Select course--</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+            <option value="Math">Mathematics</option>
+            <option value="Foreign Language">Foreign Language</option>
+            <option value="Art">Art</option>
+            <option value="Other">Other</option>
+        </select>
+        </span>
+      </h3> </div>
+    </div>
+    <div class="column" style="background-color:mintcream;">
+      <div> <h2>  9. <span id="name8"> </span></h2></div>
+      <div> <h3> Due Date: <span id="date8"> </span></h3></div>
+      <div> <h3> Course: <span id="course8"> </span></h3></div>
+      <div> <h4> Select your course: <span>
+        <select id='mySelect3'>
+          <option value='nothing'>--Select course--</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+            <option value="Math">Mathematics</option>
+            <option value="Foreign Language">Foreign Language</option>
+            <option value="Art">Art</option>
+            <option value="Other">Other</option>
+        </select>
+        </span>
+        </h3>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="assignments.js"></script>
+  </body>
+  </html>
